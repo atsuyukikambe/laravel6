@@ -19,5 +19,10 @@
             </div>
         </div>
     </div>
+    <div class="row justify-content-center mt-4">
+        @if (\Auth::check())
+        {!! link_to_route('hello', 'click', ['id' => Auth::id()], ['class' => 'btn']) !!}
+        @endif
+    </div>
 </div>
 @endsection
