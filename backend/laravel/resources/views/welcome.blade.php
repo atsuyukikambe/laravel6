@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container center">
-        Welcome to Laravel!
-    </div>
+<style>
+    .container center {
+        margin-top: 100px;
+    }
+</style>
+<div class="container center">
+    Welcome to Laravel!
+</div>
 @endsection
