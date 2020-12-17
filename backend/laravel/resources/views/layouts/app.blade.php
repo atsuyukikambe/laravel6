@@ -23,14 +23,13 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
-    <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
         <header>
             @guest
+            <a class="title" href="/">limited time</a>
             <nav id="nav">
                 <ul>
                     <li><a href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
@@ -45,6 +44,7 @@
                 <span class="inner_line" id="line3"></span>
             </div>
             @else
+            <a class="title" href="/">limited time</a>
             <nav id="nav">
                 <ul>
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault();

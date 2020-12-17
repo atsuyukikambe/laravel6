@@ -2,11 +2,11 @@
 
 @section('content')
 <style>
-    .container center {
-        margin-top: 100px;
+    .container {
+        margin-top: 2000px;
     }
 </style>
-<div class="container center">
+<div class="container">
     Welcome to Laravel!
 </div>
 @endsection
