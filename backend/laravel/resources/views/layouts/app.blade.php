@@ -29,7 +29,7 @@
     <div id="app">
         <header>
             @guest
-            <a class="title" href="/">limited time</a>
+            <a class="title" href="/">LIMITED TIME</a>
             <nav id="nav">
                 <ul>
                     <li><a href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
@@ -44,12 +44,16 @@
                 <span class="inner_line" id="line3"></span>
             </div>
             @else
-            <a class="title" href="/">limited time</a>
+            <a class="title" href="/">LIMITED TIME</a>
             <nav id="nav">
                 <ul>
+                    <li><a href="#">今日</a></li>
+                    <li><a href="#">今月</a></li>
+                    <li><a href="#">自分の記録</a></li>
+                    <li><a href="#">他の人の記録</a></li>
+                    <li><a href="#">投稿</a></li>
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">{{ __('ログアウト') }}</a></li>
-                    <li><a href="{{ url('/home') }}">HOME</a></li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>

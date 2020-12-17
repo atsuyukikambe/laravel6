@@ -21,9 +21,9 @@ a.title:hover {
     translate: .4s;
 }
 
-@media (min-width:700px) {
+@media (min-width:800px) {
     header {
-        padding: 20px 4% 20px;
+        padding: 0;
         position: fixed;
         top: 0;
         width: 100%;
@@ -34,16 +34,20 @@ a.title:hover {
         box-shadow: 0 0 5px 0 rgb(17, 14, 9);
     }
     a.title {
-        display: inline-block;
-        margin: 0;
+        display: block;
+        margin: 7.5px 0 7.5px 15px;
         padding: 0;
-        font-size: 20px;
+        width: 200px;
+        font-size: 30px;
         text-decoration: none;
         color: #fff;
+        font-family: 'Hannotate SC', sans-serif;
     }
     #nav {
-        display: inline-block;
-        float: right;
+        right: 0;
+        top: 15px;
+        width: 600px;
+        position: absolute;
     }
     #nav ul {
         list-style: none;
@@ -61,7 +65,7 @@ a.title:hover {
     }
 }
 
-@media (max-width:699px) {
+@media (max-width:799px) {
     header {
         position: fixed;
         height: 60px;
@@ -73,12 +77,13 @@ a.title:hover {
     }
     a.title {
         display: block;
-        margin: 15px 0 15px 15px;
+        margin: 7.5px 0 10px 7.5px;
         padding: 0;
         width: 200px;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 30px;
         color: #fff;
+        font-family: 'Hannotate SC', sans-serif;
     }
     #nav {
         position: fixed;
