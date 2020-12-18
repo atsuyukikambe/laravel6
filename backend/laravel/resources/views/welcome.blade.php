@@ -1,12 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-    .container {
-        margin-top: 2000px;
-    }
-</style>
-<div class="container">
-    Welcome to Laravel!
-</div>
+<link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+<img src="laravel6-img/4170204_s.jpeg" alt="welcome-top">
+
 @endsection

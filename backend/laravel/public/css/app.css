@@ -46,10 +46,13 @@ a.title:hover {
     #nav {
         right: 0;
         top: 15px;
-        width: 600px;
+        width: 700px;
         position: absolute;
     }
     #nav ul {
+        position: absolute;
+        right: 15px;
+        top: 0;
         list-style: none;
         margin: 0;
         display: flex;

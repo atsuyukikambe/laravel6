@@ -49,6 +49,7 @@
                 <ul>
                     <li><a href="#">今日</a></li>
                     <li><a href="#">今月</a></li>
+                    <li><a href="#">タイマー</a></li>
                     <li><a href="#">自分の記録</a></li>
                     <li><a href="#">他の人の記録</a></li>
                     <li><a href="#">投稿</a></li>
