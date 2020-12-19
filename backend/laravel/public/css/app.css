@@ -39,6 +39,9 @@ a.title:hover {
 }
 
 @media (min-width:900px) {
+    main {
+        margin-top: 60px;
+    }
     header {
         display: flex;
         align-items: center;
@@ -74,26 +77,29 @@ a.title:hover {
 }
 
 @media (max-width:899px) {
+    main {
+        margin-top: 40px;
+    }
     header {
-        height: 60px;
+        height: 40px;
     }
     a.title {
-        margin: 7.5px 0 10px 7.5px;
+        margin: 5px 0 10px 10px;
         width: 200px;
-        font-size: 30px;
+        font-size: 20px;
     }
     #nav {
         position: fixed;
         z-index: 100;
         top: 0;
-        right: -300px;
-        width: 300px;
+        right: -200px;
+        width: 200px;
         height: 100vh;
         background: linear-gradient(#002b90, #2a6aff);
         transition: .4s;
     }
     #nav ul {
-        padding-top: 60px;
+        padding-top: 40px;
         padding-left: 0;
     }
     #nav ul li {
@@ -113,17 +119,17 @@ a.title:hover {
         display: block;
         position: absolute;
         z-index: 200;
-        top: 13px;
-        right: 15px;
-        width: 50px;
-        height: 30px;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 20px;
         transition: .5s;
     }
     .inner_line {
         display: block;
         position: absolute;
-        width: 50px;
-        height: 3px;
+        width: 30px;
+        height: 2px;
         background-color: #fff;
         transition: .5s;
         border-radius: 4px;
@@ -132,7 +138,7 @@ a.title:hover {
         top: 0;
     }
     #line2 {
-        top: 13px;
+        top: 9px;
     }
     #line3 {
         bottom: 0;
@@ -144,14 +150,14 @@ a.title:hover {
         background: #fff;
     }
     .line_1 {
-        transform: translateY(13px) rotate(-45deg);
+        transform: translateY(9px) rotate(-45deg);
         top: 0;
     }
     .line_2 {
         opacity: 0;
     }
     .line_3 {
-        transform: translateY(-13px) rotate(45deg);
+        transform: translateY(-9px) rotate(45deg);
         bottom: 0;
     }
 }
