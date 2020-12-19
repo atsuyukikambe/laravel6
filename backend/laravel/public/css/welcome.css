@@ -8,10 +8,21 @@
         background-size: 100%;
         background-attachment: fixed;
     }
+    h1.p-0 {
+        display: none;
+    }
+    div.flex.text-center {
+        display: none;
+    }
 }
 
 @media (max-width:899px) {
-    img {
-        width: 100vw;
+    div.flex.text-center {
+        background: url(/laravel6-img/4170204_s.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1.py-52 {
+        display: none;
     }
 }
