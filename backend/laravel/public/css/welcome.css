@@ -1,0 +1,17 @@
+@media (min-width:900px) {
+    img {
+        display: none;
+    }
+    .bg {
+        background: url(/laravel6-img/4170204_s.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:899px) {
+    img {
+        width: 100vw;
+    }
+}
