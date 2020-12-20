@@ -23,6 +23,7 @@ a.title {
 
 main {
     margin-top: 60px;
+    z-index: 10;
 }
 
 a.title:hover {
@@ -38,7 +39,7 @@ a.title:hover {
     translate: .4s;
 }
 
-@media (min-width:900px) {
+@media (min-width:1024px) {
     main {
         margin-top: 60px;
     }
@@ -76,7 +77,7 @@ a.title:hover {
     }
 }
 
-@media (max-width:899px) {
+@media (max-width:1023px) {
     main {
         margin-top: 40px;
     }

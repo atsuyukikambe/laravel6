@@ -2,11 +2,11 @@
 
 @section('content')
 <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
-<div class="flex text-center pt-0">
-    <h1 class="text-2xl m-auto tracking-wide py-14">限られた時間で<br>最大限の効果を</h1>
+<div class="flex text-center">
+    <h1 class="text-2xl m-auto tracking-wide py-32">限られた時間で<br>最大限の効果を</h1>
 </div>
 <div class="bg">
-    <section class="text-gray-700 body-font">
+    <section class="body-font">
         <div class="container px-5 py-24 mx-auto">
             <h1 class="text-6xl text-center tracking-wide py-52">限られた時間で<br>最大限の効果を</h1>
             <div class="flex flex-wrap -m-4">

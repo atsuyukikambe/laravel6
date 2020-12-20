@@ -1,4 +1,4 @@
-@media (min-width:900px) {
+@media (min-width:1024px) {
     img {
         display: none;
     }
@@ -14,13 +14,18 @@
     div.flex.text-center {
         display: none;
     }
+    div.flex-wrap {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
 }
 
-@media (max-width:899px) {
+@media (max-width:1023px) {
     div.flex.text-center {
         background: url(/laravel6-img/4170204_s.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100%;
+        background-position: 30% 50%;
     }
     h1.py-52 {
         display: none;
