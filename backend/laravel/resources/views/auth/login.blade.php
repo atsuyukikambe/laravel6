@@ -13,7 +13,7 @@
                     {{ __('メールアドレス') }}
                 </label>
                 <div class="">
-                    <input id="email" class="form-control @error('email') is invalid @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" value="{{ old('email') }}" type="email" required autocomplete="email" autofocus placeholder="Email" />
+                    <input id="email" class="form-control @error('email') is invalid @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" value="{{ old('email') }}" type="email" required autocomplete="email" autofocus placeholder="メールアドレス" />
                     @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -26,7 +26,7 @@
                     {{ __('パスワード') }}
                 </label>
                 <div class="">
-                    <input id="passward" class="form-control @error('password') is-invalid @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Password" name="password" required autocomplete="current-password" />
+                    <input id="passward" class="form-control @error('password') is-invalid @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="パスワード" name="password" required autocomplete="current-password" />
                     @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-between">
-                <button class="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">{{ __('ログイン') }}</button>
+                <button class="px-4 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 shadow-lg" type="submit">{{ __('ログイン') }}</button>
                 @if (Route::has('passward.request'))
                 <a class="inline-block align-baseline font-normal text-sm text-blue-500 hover:text-blue-800" href="{{ route('passward.request')}}">
                     {{ __('Forgot Password?') }}

@@ -32,12 +32,12 @@
     <div id="app">
         <header>
             @guest
-            <a class="title" href="/">LIMITED TIME</a>
+            <a class="title duration-300 ease-in-out transform hover:scale-110" href="/">LIMITED TIME</a>
             <nav id="nav">
                 <ul>
-                    <li><a href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
                     @if (Route::has('register'))
-                    <li><a href="{{ route('register') }}">{{ __('新規登録') }}</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="{{ route('register') }}">{{ __('新規登録') }}</a></li>
                     @endif
                 </ul>
             </nav>
@@ -47,16 +47,16 @@
                 <span class="inner_line" id="line3"></span>
             </div>
             @else
-            <a class="title" href="/">LIMITED TIME</a>
+            <a class="title duration-300 ease-in-out transform hover:scale-110" href="/">LIMITED TIME</a>
             <nav id="nav">
                 <ul>
-                    <li><a href="#">今日</a></li>
-                    <li><a href="#">今月</a></li>
-                    <li><a href="#">タイマー</a></li>
-                    <li><a href="#">自分の記録</a></li>
-                    <li><a href="#">他の人の記録</a></li>
-                    <li><a href="#">投稿</a></li>
-                    <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">今日</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">今月</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">タイマー</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">自分の記録</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">他の人の記録</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">投稿</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="{{ route('logout') }}" onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">{{ __('ログアウト') }}</a></li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
