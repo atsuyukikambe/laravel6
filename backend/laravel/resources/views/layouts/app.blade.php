@@ -50,7 +50,7 @@
             <a class="title duration-300 ease-in-out transform hover:scale-110" href="/">LIMITED TIME</a>
             <nav id="nav">
                 <ul>
-                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">今日</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a>{!! link_to_route('plan.today', '今日', ['id' => Auth::id()]) !!}</a></li>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">今月</a></li>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">タイマー</a></li>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">自分の記録</a></li>

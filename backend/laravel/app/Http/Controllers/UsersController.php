@@ -8,11 +8,11 @@ use App\User;
 
 class UsersController extends Controller
 {
-    public function hello()
+    public function today()
     {
         $user = \Auth::user();
 
-        return view ('hello', [
+        return view('plan.today', [
             'user' => $user,
         ]);
     }

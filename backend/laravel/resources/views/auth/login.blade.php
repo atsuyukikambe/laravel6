@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-between">
-                <button class="px-4 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 shadow-lg" type="submit">{{ __('ログイン') }}</button>
+                <button class="px-4 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 hover:bg-gray-700" type="submit">{{ __('ログイン') }}</button>
                 @if (Route::has('passward.request'))
                 <a class="inline-block align-baseline font-normal text-sm text-blue-500 hover:text-blue-800" href="{{ route('passward.request')}}">
                     {{ __('Forgot Password?') }}
