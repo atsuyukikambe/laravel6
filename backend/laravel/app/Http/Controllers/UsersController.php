@@ -16,4 +16,13 @@ class UsersController extends Controller
             'user' => $user,
         ]);
     }
+
+    public function month()
+    {
+        $user = \Auth::user();
+
+        return view('plan.month', [
+            'user' => $user,
+        ]);
+    }
 }

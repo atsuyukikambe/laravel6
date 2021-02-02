@@ -13,6 +13,19 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src='/js/fullcalendar/core/main.js'></script>
+    <script src='/js/fullcalendar/daygrid/main.js'></script>
+    <script src='/js/fullcalendar/interaction/main.js'></script>
+
+    <script src="/js/ajax-setup.js"></script>
+    <script src='/js/fullcalendar.js'></script>
+    <script src='/js/event-control.js'></script>
+
+    <link href='/css/fullcalendar/core/main.css' type="text/css" rel='stylesheet' />
+    <link href='/css/fullcalendar/daygrid/main.css' type="text/css" rel='stylesheet' />
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -51,7 +64,7 @@
             <nav id="nav">
                 <ul>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a>{!! link_to_route('plan.today', '今日', ['id' => Auth::id()]) !!}</a></li>
-                    <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">今月</a></li>
+                    <li class="duration-300 ease-in-out transform hover:scale-110"><a>{!! link_to_route('plan.month', '今月', ['id' => Auth::id()]) !!}</a></li>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">タイマー</a></li>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">自分の記録</a></li>
                     <li class="duration-300 ease-in-out transform hover:scale-110"><a href="#">他の人の記録</a></li>
