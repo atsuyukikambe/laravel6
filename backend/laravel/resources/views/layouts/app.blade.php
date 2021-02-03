@@ -10,21 +10,10 @@
 
     <title>limited time</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script src='/js/fullcalendar/core/main.js'></script>
-    <script src='/js/fullcalendar/daygrid/main.js'></script>
-    <script src='/js/fullcalendar/interaction/main.js'></script>
-
     <script src="/js/ajax-setup.js"></script>
-    <script src='/js/fullcalendar.js'></script>
     <script src='/js/event-control.js'></script>
-
-    <link href='/css/fullcalendar/core/main.css' type="text/css" rel='stylesheet' />
-    <link href='/css/fullcalendar/daygrid/main.css' type="text/css" rel='stylesheet' />
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -38,6 +27,9 @@
 
     <!-- Tailwind CSS -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 
