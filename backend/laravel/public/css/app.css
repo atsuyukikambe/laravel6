@@ -11,6 +11,7 @@ header {
     background: linear-gradient(#002b90, #2a6aff);
     box-shadow: 0 0 5px 0 rgb(17, 14, 9);
     position: fixed;
+    z-index: 10;
 }
 
 a.title {
