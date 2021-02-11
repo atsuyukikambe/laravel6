@@ -14262,7 +14262,7 @@
 
 
             /***/
-}),
+        }),
 
 /***/ "./node_modules/@fullcalendar/interaction/node_modules/tslib/tslib.es6.js":
 /*!********************************************************************************!*\
@@ -14537,7 +14537,7 @@
 
 
             /***/
-}),
+        }),
 
 /***/ "./node_modules/@fullcalendar/timegrid/main.css":
 /*!******************************************************!*\
@@ -16793,52 +16793,30 @@
 /* harmony import */ var _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/timegrid */ "./node_modules/@fullcalendar/timegrid/main.js");
 /* harmony import */ var _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/interaction */ "./node_modules/@fullcalendar/interaction/main.js");
 
-
-
-<<<<<<< HEAD
             document.addEventListener('DOMContentLoaded', function () {
                 var calendarEl = document.getElementById('calendar');
 
                 if (calendarEl) {
                     var calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
-                        plugins: [_fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__["default"]],
+                        plugins: [_fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__["default"]],
                         initialView: 'timeGridDay',
                         headerToolbar: {
                             left: 'prev,next today',
                             center: 'title',
                             right: 'timeGridDay'
+                        },
+                        dateClick: function dateClick(info) {
+                            alert('Clicked on: ' + info.dateStr);
+                            console.log(info);
+                        },
+                        eventClick: function eventClick(info) {
+                            console.log(info);
                         }
                     });
                     calendar.render();
                     console.log(calendarEl, calendar);
                 }
             });
-=======
-document.addEventListener('DOMContentLoaded', function () {
-  var calendarEl = document.getElementById('calendar');
-
-  if (calendarEl) {
-    var calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
-      plugins: [_fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__["default"]],
-      initialView: 'timeGridDay',
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'timeGridDay'
-      },
-      dateClick: function dateClick(info) {
-        alert('Clicked on: ' + info.dateStr);
-        console.log(info);
-      },
-      eventClick: function eventClick(info) {
-        console.log(info);
-      }
-    });
-    calendar.render();
-    console.log(calendarEl, calendar);
-  }
-});
->>>>>>> 8e39fc420e2ceb3805bda8f634344b3644b4acab
 
             /***/
         }),
