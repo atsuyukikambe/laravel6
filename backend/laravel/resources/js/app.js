@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(info);
             },
             eventClick: (info) => {
-                console.log(info)
+                console.log(info);
             }
         })
         calendar.render()

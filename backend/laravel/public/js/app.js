@@ -16801,9 +16801,7 @@
                         plugins: [_fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__["default"]],
                         initialView: 'timeGridDay',
                         headerToolbar: {
-                            left: 'prev,next today',
-                            center: 'title',
-                            right: 'timeGridDay'
+
                         },
                         dateClick: function dateClick(info) {
                             alert('Clicked on: ' + info.dateStr);
@@ -16817,6 +16815,7 @@
                     console.log(calendarEl, calendar);
                 }
             });
+
 
             /***/
         }),
