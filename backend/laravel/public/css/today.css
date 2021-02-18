@@ -9,14 +9,17 @@
 }
 
 #modal {
+    cursor: pointer;
     background: #fff;
     position: absolute;
+    border-radius: 4px;
+    width: 75%;
     top: 100px;
     left: 0;
     right: 0;
     margin: 0 auto;
     z-index: 202;
-    transition: 0.4s;
+    transition: 3s;
 }
 
 #mask.hidden {
@@ -24,5 +27,5 @@
 }
 
 #modal.hidden {
-    transform: translate(0, -500px);
+    transform: translate(0, -100px);
 }
