@@ -19,7 +19,8 @@
     right: 0;
     margin: 0 auto;
     z-index: 202;
-    transition: 3s;
+    transition: 1s;
+    opacity: 1;
 }
 
 #mask.hidden {
@@ -28,4 +29,7 @@
 
 #modal.hidden {
     transform: translate(0, -100px);
+    display: block;
+    opacity: 0;
+    visibility: hidden;
 }
