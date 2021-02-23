@@ -12,7 +12,6 @@
     background: #fff;
     position: absolute;
     border-radius: 4px;
-    width: 75%;
     top: 100px;
     left: 0;
     right: 0;
@@ -20,6 +19,10 @@
     z-index: 202;
     transition: 1s;
     opacity: 1;
+}
+
+.text-gray-700.text-sm.mb-2 {
+    font-family: 'Hannotate SC', sans-serif;
 }
 
 #mask.hidden {
@@ -32,3 +35,14 @@
     opacity: 0;
     visibility: hidden;
 }
+
+@media (min-width:351px) {
+    #modal {
+        width: 75%;
+    }
+}
+
+@media (max-width:350px) {
+    #modal {
+        width: 100%;
+    }
