@@ -33,3 +33,15 @@
     opacity: 0;
     visibility: hidden;
 }
+
+@media (min-width:351px) {
+    #modal {
+        width: 75%;
+    }
+}
+
+@media (max-width:350px) {
+    #modal {
+        width: 100%;
+    }
+}
