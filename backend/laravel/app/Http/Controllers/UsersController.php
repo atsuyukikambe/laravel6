@@ -18,7 +18,26 @@ class UsersController extends Controller
 
         return view('plan.today', [
             'user' => $user,
-            'today' => $today
+            'today' => $today,
+        ]);
+    }
+
+    public function addplan(Request $request)
+    {
+        $user = \Auth::user();
+
+        $today = Carbon::now();
+
+        $request->validate([
+            'content' => 'required',
+        ]);
+
+        $content = $request->input('content');
+
+        return view('plan.today', [
+            'content' => $content,
+            'user' => $user,
+            'today' => $today,
         ]);
     }
 
