@@ -14,7 +14,7 @@
         <tbody>
             @isset ($content)
             <tr>
-                <td>{{ content }}</td>
+                <td>{{ $content }}</td>
             </tr>
             @endisset
         </tbody>
