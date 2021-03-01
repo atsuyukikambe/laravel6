@@ -15,8 +15,11 @@ class CreatePlansTable extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
             $table->string('content');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
