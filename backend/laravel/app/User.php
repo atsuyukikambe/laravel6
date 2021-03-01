@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function plans()
+    {
+        return $this->hasMany(Plan::class);
+    }
+
+    public function loadRelationshipCounts()
+    {
+        $this->loadCount('plans');
+    }
 }
