@@ -26,7 +26,8 @@
 <div id="mask" class="hidden"></div>
 <section id="modal" class="hidden">
     <div class=" flex items-center justify-center">
-        <form id="form" class="px-8 pt-6 mb-4 w-11/12">
+        <form id="form" class="px-8 pt-6 mb-4 w-11/12" action="plan.today" method="POST">
+            @csrf
             <div class="mb-4">
                 <div class="text-gray-700 text-sm mb-2">
                     科目
@@ -77,7 +78,6 @@
                 <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
             </div>
             <div class="text-center py-6">
-                {{ csrf_field() }}
                 <button class="text-xs px-3 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 hover:bg-gray-700 cursor-pointer" id="">決定</button>
                 <button class="text-xs px-3 py-2 rounded-full mx-auto text-green-500 inline-block bg-gray-900 hover:bg-gray-700 cursor-pointer" id="close">キャンセル</button>
             </div>

@@ -38,10 +38,6 @@ class UsersController extends Controller
 
         $content = $request->input('content');
 
-        $user->plans()->create([
-            'content' => $content
-        ]);
-
         return view('plan.today', [
             'content' => $content,
             'user' => $user,
