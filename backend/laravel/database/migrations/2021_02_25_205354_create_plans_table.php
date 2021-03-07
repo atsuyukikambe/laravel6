@@ -16,7 +16,13 @@ class CreatePlansTable extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
-            $table->string('content');
+            $table->string('subject');
+            $table->date('date');
+            $table->timestamp('started_at')->nullable();
+            $table->timestamp('ended_at')->nullable();
+            $table->unsignedInteger('start_page')->nullable();
+            $table->unsignedInteger('end_page')->nullable();
+            $table->text('content');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
