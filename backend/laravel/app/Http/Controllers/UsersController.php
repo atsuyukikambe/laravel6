@@ -14,31 +14,25 @@ class UsersController extends Controller
     {
         $user = \Auth::user();
 
-        $today = Carbon::now();
+        $today = Carbon::today();
 
-        return view('plan.today', [
-            'user' => $user,
-            'today' => $today,
-        ]);
+        // 本日実施したプランを取得
+        $plans = $user->plans()->where('date', $today)->get();
+        return view('plan.today', compact('user', 'today', 'plans'));
     }
 
     public function addplan(Request $request)
     {
-        $user = \Auth::user();
-
-        $today = Carbon::now();
-
         $request->validate([
             'content' => 'required',
         ]);
+        $user = \Auth::user();
+        $date = Carbon::today();
+        $subject = $request->subject;
+        $content = $request->content;
+        $user->plans()->create(compact('date', 'subject', 'content'));
 
-        $content = $request->input('content');
-
-        return view('plan.today', [
-            'content' => $content,
-            'user' => $user,
-            'today' => $today,
-        ]);
+        return redirect()->route('plan.today');
     }
 
     public function month()

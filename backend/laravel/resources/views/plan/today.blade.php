@@ -26,24 +26,84 @@
 <div id="mask" class="hidden"></div>
 <section id="modal" class="hidden">
     <div class=" flex items-center justify-center">
-        <form id="form" class="px-8 pt-6 mb-4 w-11/12" action="plan.today" method="POST">
+        <form id="form" class="px-8 pt-6 mb-4 w-11/12" action="{{ route('plan.today') }}" method="POST">
             @csrf
             <div class="mb-4">
                 <div class="text-gray-700 text-sm mb-2">
                     科目
                 </div>
-                <button class="text-xs border-2 border-transparent bg-red-600 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-red-600 hover:text-red-600">国語</button>
-                <button class="text-xs border-2 border-transparent bg-blue-700 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-blue-700 hover:bg-transparent hover:text-blue-700">数学</button>
-                <button class="text-xs border-2 border-transparent bg-pink-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-pink-400 hover:bg-transparent hover:text-pink-400">英語</button>
-                <button class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-green-400 hover:bg-transparent hover:text-green-400">生物</button>
-                <button class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-green-400 hover:bg-transparent hover:text-green-400">化学</button>
-                <button class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-green-400 hover:bg-transparent hover:text-green-400">物理</button>
-                <button class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-yellow-300 hover:bg-transparent hover:text-yellow-300">日本史</button>
-                <button class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-yellow-300 hover:bg-transparent hover:text-yellow-300">世界史</button>
-                <button class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-yellow-300 hover:bg-transparent hover:text-yellow-300">地理</button>
-                <button class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-yellow-300 hover:bg-transparent hover:text-yellow-300">政治・経済</button>
-                <button class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-yellow-300 hover:bg-transparent hover:text-yellow-300">倫理</button>
-                <button class="text-xs border-2 border-transparent bg-gray-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all hover:border-gray-400 hover:bg-transparent hover:text-gray-400">その他</button>
+                <label
+                    class="text-xs border-2 border-transparent bg-red-600 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="国語" class="w-0">
+                    国語
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-pink-600 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="英語" class="w-0 opacity-0">
+                    英語
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-blue-700 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="数学" class="w-0 opacity-0">
+                    数学
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="生物" class="w-0 opacity-0">
+                    生物
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="化学" class="w-0 opacity-0">
+                    化学
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="物理" class="w-0 opacity-0">
+                    物理
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="日本史" class="w-0 opacity-0">
+                    日本史
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="世界史" class="w-0 opacity-0">
+                    世界史
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="地理" class="w-0 opacity-0">
+                    地理
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="政治・経済" class="w-0 opacity-0">
+                    政治・経済
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="倫理" class="w-0 opacity-0">
+                    倫理
+                </label>
+                <label
+                    class="text-xs border-2 border-transparent bg-gray-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75"
+                >
+                    <input name="subject" type="checkbox" value="その他" class="w-0 opacity-0">
+                    その他
+                </label>
             </div>
             <div class="mb-4">
                 <div class="text-gray-700 text-sm mb-2">
