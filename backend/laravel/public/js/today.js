@@ -17,4 +17,8 @@
         modal.classList.add('hidden');
         mask.classList.add('hidden');
     });
+
+    if ('open' === modal.dataset['init']) {
+        open.click();
+    }
 }
