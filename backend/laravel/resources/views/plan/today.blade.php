@@ -40,51 +40,51 @@
                     科目
                 </div>
                 <label class="text-xs border-2 border-transparent bg-red-600 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="国語" class="w-0">
+                    <input name="subject" id="Japanese" type="checkbox" value="国語" class="w-0">
                     国語
                 </label>
                 <label class="text-xs border-2 border-transparent bg-pink-600 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="英語" class="w-0 opacity-0">
+                    <input name="subject" id="English" type="checkbox" value="英語" class="w-0 opacity-0">
                     英語
                 </label>
                 <label class="text-xs border-2 border-transparent bg-blue-700 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="数学" class="w-0 opacity-0">
+                    <input name="subject" id="Math" type="checkbox" value="数学" class="w-0 opacity-0">
                     数学
                 </label>
                 <label class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="生物" class="w-0 opacity-0">
+                    <input name="subject" id="Biology" type="checkbox" value="生物" class="w-0 opacity-0">
                     生物
                 </label>
                 <label class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="化学" class="w-0 opacity-0">
+                    <input name="subject" id="Chemistry" type="checkbox" value="化学" class="w-0 opacity-0">
                     化学
                 </label>
                 <label class="text-xs border-2 border-transparent bg-green-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="物理" class="w-0 opacity-0">
+                    <input name="subject" id="Physics" type="checkbox" value="物理" class="w-0 opacity-0">
                     物理
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="日本史" class="w-0 opacity-0">
+                    <input name="subject" id="Japanese-history" type="checkbox" value="日本史" class="w-0 opacity-0">
                     日本史
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="世界史" class="w-0 opacity-0">
+                    <input name="subject" id="World-history" type="checkbox" value="世界史" class="w-0 opacity-0">
                     世界史
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="地理" class="w-0 opacity-0">
+                    <input name="subject" id="Geography" type="checkbox" value="地理" class="w-0 opacity-0">
                     地理
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="政治・経済" class="w-0 opacity-0">
+                    <input name="subject" id="Politics and economy" type="checkbox" value="政治・経済" class="w-0 opacity-0">
                     政治・経済
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="倫理" class="w-0 opacity-0">
+                    <input name="subject" id="Ethics" type="checkbox" value="倫理" class="w-0 opacity-0">
                     倫理
                 </label>
                 <label class="text-xs border-2 border-transparent bg-gray-400 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" type="checkbox" value="その他" class="w-0 opacity-0">
+                    <input name="subject" id="others" type="checkbox" value="その他" class="w-0 opacity-0">
                     その他
                 </label>
                 @error('subject')
