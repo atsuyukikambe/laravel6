@@ -76,7 +76,7 @@
                     地理
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
-                    <input name="subject" id="Politics and economy" type="checkbox" value="政治・経済" class="w-0 opacity-0">
+                    <input name="subject" id="Politics-and-economy" type="checkbox" value="政治・経済" class="w-0 opacity-0">
                     政治・経済
                 </label>
                 <label class="text-xs border-2 border-transparent bg-yellow-300 ml-0 mb-1 py-1 px-2 font-bold uppercase text-white rounded transition-all cursor-pointer hover:opacity-75">
