@@ -26,6 +26,5 @@ class SubjectsTableSeeder extends Seeder
             ['label' => 'Ethics', 'name' => '倫理', 'created_at' => now(), 'updated_at' => now()],
             ['label' => 'Others', 'name' => 'その他', 'created_at' => now(), 'updated_at' => now()],
         ]);
-        
     }
 }
