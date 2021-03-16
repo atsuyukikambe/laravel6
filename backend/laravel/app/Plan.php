@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Plan extends Model
 {
     protected $fillable = [
-        'subject',
         'date',
+        'subject_id',
         'started_at',
         'ended_at',
         'content',
@@ -21,10 +22,14 @@ class Plan extends Model
         'started_at',
         'ended_at',
     ];
-
     
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function subject(): BelongsTo
+    {
+        return $this->belongsTo(Subject::class);
     }
 }

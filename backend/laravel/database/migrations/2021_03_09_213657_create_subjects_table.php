@@ -15,18 +15,8 @@ class CreateSubjectsTable extends Migration
     {
         Schema::create('subjects', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Japanese');
-            $table->string('English');
-            $table->string('Math');
-            $table->string('Biology');
-            $table->string('Chemistry');
-            $table->string('Physics');
-            $table->string('Japanese-history');
-            $table->string('World-history');
-            $table->string('Geography');
-            $table->string('Politics-and-economy');
-            $table->string('Ethics');
-            $table->string('others');
+            $table->string('label');
+            $table->string('name');
             $table->timestamps();
         });
     }

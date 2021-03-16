@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Subject;
 use Illuminate\Http\Request;
-
-use App\User;
 
 use Carbon\Carbon;
 
@@ -18,7 +17,8 @@ class UsersController extends Controller
 
         // 本日実施したプランを取得
         $plans = $user->plans()->where('date', $today)->get();
-        return view('plan.today', compact('user', 'today', 'plans'));
+        $subjects = Subject::orderBy('id')->get();
+        return view('plan.today', compact('user', 'today', 'plans', 'subjects'));
     }
 
     public function addplan(Request $request)
@@ -28,9 +28,9 @@ class UsersController extends Controller
         ]);
         $user = \Auth::user();
         $date = Carbon::today();
-        $subject = $request->subject;
+        $subject_id = $request->subject_id;
         $content = $request->content;
-        $user->plans()->create(compact('date', 'subject', 'content'));
+        $user->plans()->create(compact('date', 'subject_id', 'content'));
 
         return redirect()->route('plan.today');
     }
