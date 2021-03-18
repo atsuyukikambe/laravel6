@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['auth']], function () {
     Route::get('today', 'UsersController@today')->name('plan.today');
     Route::post('today', 'UsersController@addplan')->name('plan.today');
-    
+
     Route::get('month', 'UsersController@month')->name('plan.month');
     Route::post('addplan', 'UsersController@addplan')->name('plan.addplan');
 });

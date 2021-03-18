@@ -12,9 +12,7 @@ class UsersController extends Controller
     public function today()
     {
         $user = \Auth::user();
-
         $today = Carbon::today();
-
         // 本日実施したプランを取得
         $plans = $user->plans()->where('date', $today)->get();
         $subjects = Subject::orderBy('id')->get();
@@ -31,7 +29,6 @@ class UsersController extends Controller
         $subject_id = $request->subject_id;
         $content = $request->content;
         $user->plans()->create(compact('date', 'subject_id', 'content'));
-
         return redirect()->route('plan.today');
     }
 

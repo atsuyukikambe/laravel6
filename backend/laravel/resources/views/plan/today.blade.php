@@ -5,27 +5,18 @@
 <script src="{{ asset('js/today.js') }}" defer></script>
 <div class="container my-24 py-2 border bg-blue-700 rounded-lg">
     <div class="text-center my-6 text-white text-2xl">{{ $today->format('Y年m月d日') }}</div>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th class="text-white">plan</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="flex">
+        <div class="w-2/12">
+            <p class="text-center">こんにちは</p>
+        </div>
+        <div class="text-center ml-6 my-4 w-10/12">
             @foreach($plans as $plan)
-            <tr>
-                <td>
-                    <p class="text-white">
-                        <span class="{{ $plan->subject->bgColor ?? '' }} text-xs border-2 border-transparent bg-black py-1 px-2 font-bold text-white rounded transition-all mr-2">
-                            {{ $plan->subject->name ?? '' }}
-                        </span>
-                        {{ $plan->content }}
-                    </p>
-                </td>
-            </tr>
+            <p class="{{ $plan->subject->bgColor ?? '' }} mb-0 text-xs border-2 border-transparent py-1 px-2 font-bold text-white transition-all mr-2">
+                {{ $plan->content }}
+            </p>
             @endforeach
-        </tbody>
-    </table>
+        </div>
+    </div>
     <div class="text-center">
         <button class="px-4 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 hover:bg-gray-700" id="open">追加</button>
     </div>
