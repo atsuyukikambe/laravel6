@@ -6,8 +6,31 @@
 <div class="container my-24 py-2 border bg-blue-700 rounded-lg">
     <div class="text-center my-6 text-white text-2xl">{{ $today->format('Y年m月d日') }}</div>
     <div class="flex">
-        <div class="w-2/12">
-            <p class="text-center">こんにちは</p>
+        <div class="w-2/12 text-white text-xs my-3">
+            <p class="text-center mb-4">5:00</p>
+            <p class="text-center mb-4">6:00</p>
+            <p class="text-center mb-4">7:00</p>
+            <p class="text-center mb-4">8:00</p>
+            <p class="text-center mb-4">9:00</p>
+            <p class="text-center mb-4">10:00</p>
+            <p class="text-center mb-4">11:00</p>
+            <p class="text-center mb-4">12:00</p>
+            <p class="text-center mb-4">13:00</p>
+            <p class="text-center mb-4">14:00</p>
+            <p class="text-center mb-4">15:00</p>
+            <p class="text-center mb-4">16:00</p>
+            <p class="text-center mb-4">17:00</p>
+            <p class="text-center mb-4">18:00</p>
+            <p class="text-center mb-4">19:00</p>
+            <p class="text-center mb-4">20:00</p>
+            <p class="text-center mb-4">21:00</p>
+            <p class="text-center mb-4">22:00</p>
+            <p class="text-center mb-4">23:00</p>
+            <p class="text-center mb-4">0:00</p>
+            <p class="text-center mb-4">1:00</p>
+            <p class="text-center mb-4">2:00</p>
+            <p class="text-center mb-4">3:00</p>
+            <p class="text-center mb-4">4:00</p>
         </div>
         <div class="text-center ml-6 my-4 w-10/12">
             @foreach($plans as $plan)
