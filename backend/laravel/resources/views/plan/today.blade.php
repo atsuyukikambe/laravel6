@@ -62,13 +62,13 @@
                 <div class="text-gray-700 text-sm mb-2">
                     時間
                 </div>
-                <input class="inline-block shadow appearance-none border rounded w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="23" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="23" placeholder="">
                 <div class="inline-block">:</div>
-                <input class="inline-block shadow appearance-none border rounded w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="name" type="number" placeholder="">
-                <div class="inline-block px-1">~</div>
-                <input class="inline-block shadow appearance-none border rounded w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="59" placeholder="">
+                <div class="inline-block">~</div>
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="23" placeholder="">
                 <div class="inline-block">:</div>
-                <input class="inline-block shadow appearance-none border rounded w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="59" placeholder="">
             </div>
             <div class="mb-4">
                 <div class="text-gray-700 text-sm mb-2">
@@ -83,15 +83,15 @@
                 <div class="text-gray-700 text-sm mb-2">
                     ページ数
                 </div>
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <div class="inline-block px-1">~</div>
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
-                <input class="inline-block shadow appearance-none border w-3 py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <div class="inline-block">~</div>
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
             </div>
             <div class="text-center py-6">
                 <button type="submit" class="text-xs px-3 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 hover:bg-gray-700 cursor-pointer">
