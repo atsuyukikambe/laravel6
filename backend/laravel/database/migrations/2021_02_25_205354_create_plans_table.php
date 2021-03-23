@@ -23,6 +23,14 @@ class CreatePlansTable extends Migration
             $table->unsignedInteger('start_page')->nullable();
             $table->unsignedInteger('end_page')->nullable();
             $table->text('content');
+            $table->integer('page1');
+            $table->integer('page2');
+            $table->integer('page3');
+            $table->integer('page4');
+            $table->integer('page5');
+            $table->integer('page6');
+            $table->integer('page7');
+            $table->integer('page8');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');

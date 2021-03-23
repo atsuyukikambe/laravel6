@@ -7,6 +7,11 @@
     <div class="text-center my-6 text-white text-2xl">{{ $today->format('Y年m月d日') }}</div>
     <div class="flex">
         <div class="w-2/12 text-white text-xs my-3">
+            <p class="text-center mb-4">0:00</p>
+            <p class="text-center mb-4">1:00</p>
+            <p class="text-center mb-4">2:00</p>
+            <p class="text-center mb-4">3:00</p>
+            <p class="text-center mb-4">4:00</p>
             <p class="text-center mb-4">5:00</p>
             <p class="text-center mb-4">6:00</p>
             <p class="text-center mb-4">7:00</p>
@@ -26,16 +31,12 @@
             <p class="text-center mb-4">21:00</p>
             <p class="text-center mb-4">22:00</p>
             <p class="text-center mb-4">23:00</p>
-            <p class="text-center mb-4">0:00</p>
-            <p class="text-center mb-4">1:00</p>
-            <p class="text-center mb-4">2:00</p>
-            <p class="text-center mb-4">3:00</p>
-            <p class="text-center mb-4">4:00</p>
         </div>
         <div class="text-center ml-6 my-4 w-10/12">
             @foreach($plans as $plan)
             <p class="{{ $plan->subject->bgColor ?? '' }} mb-0 text-xs border-2 border-transparent py-1 px-2 font-bold text-white transition-all mr-2">
                 {{ $plan->content }}
+                ({{ $plan->page1 }}{{ $plan->page2 }}{{ $plan->page3 }}{{ $plan->page4 }}~{{ $plan->page5 }}{{ $plan->page6 }}{{ $plan->page7 }}{{ $plan->page8 }})
             </p>
             @endforeach
         </div>
@@ -83,15 +84,18 @@
                 <div class="text-gray-700 text-sm mb-2">
                     ページ数
                 </div>
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page1" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page2" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page3" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page4" id="name" type="number" min="0" max="9" placeholder="">
                 <div class="inline-block">~</div>
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
-                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page5" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page6" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page7" id="name" type="number" min="0" max="9" placeholder="">
+                <input class="inline-block shadow appearance-none border text-xs text-center w-7 py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="page8" id="name" type="number" min="0" max="9" placeholder="">
+                @error('page1')
+                <div class="mt-2 alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div class="text-center py-6">
                 <button type="submit" class="text-xs px-3 py-2 rounded-full mx-auto text-blue-700 inline-block bg-gray-900 hover:bg-gray-700 cursor-pointer">

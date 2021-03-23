@@ -28,7 +28,15 @@ class UsersController extends Controller
         $date = Carbon::today();
         $subject_id = $request->subject_id;
         $content = $request->content;
-        $user->plans()->create(compact('date', 'subject_id', 'content'));
+        $page1 = $request->page1;
+        $page2 = $request->page2;
+        $page3 = $request->page3;
+        $page4 = $request->page4;
+        $page5 = $request->page5;
+        $page6 = $request->page6;
+        $page7 = $request->page7;
+        $page8 = $request->page8;
+        $user->plans()->create(compact('date', 'subject_id', 'content', 'page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'));
         return redirect()->route('plan.today');
     }
 

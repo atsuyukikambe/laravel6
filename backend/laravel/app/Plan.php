@@ -13,6 +13,14 @@ class Plan extends Model
         'started_at',
         'ended_at',
         'content',
+        'page1',
+        'page2',
+        'page3',
+        'page4',
+        'page5',
+        'page6',
+        'page7',
+        'page8',
         'start_page',
         'end_page',
     ];
@@ -22,7 +30,7 @@ class Plan extends Model
         'started_at',
         'ended_at',
     ];
-    
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
