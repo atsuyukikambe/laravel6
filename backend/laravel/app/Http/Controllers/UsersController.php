@@ -36,7 +36,12 @@ class UsersController extends Controller
         $page6 = $request->page6;
         $page7 = $request->page7;
         $page8 = $request->page8;
-        $user->plans()->create(compact('date', 'subject_id', 'content', 'page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'));
+        $start_hour = $request->start_hour;
+        $start_minute = $request->start_minute;
+        $end_hour = $request->end_hour;
+        $end_minute = $request->end_minute;
+        $startLineHour = ($start_hour * 40 + $start_minute * 0.66666667) = $request->startLineHour;
+        $user->plans()->create(compact('date', 'subject_id', 'content', 'page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'startLineHour'));
         return redirect()->route('plan.today');
     }
 

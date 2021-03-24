@@ -34,7 +34,7 @@
         </div>
         <div class="text-center ml-6 my-4 w-10/12">
             @foreach($plans as $plan)
-            <p class="{{ $plan->subject->bgColor ?? '' }} mb-0 text-xs border-2 border-transparent py-1 px-2 font-bold text-white transition-all mr-2">
+            <p class="{{ $plan->subject->bgColor ?? '' }} mb-0 text-xs border-2 border-transparent py-1 px-2 font-bold text-white transition-all mr-2 rounded-sm">
                 {{ $plan->content }}
                 ({{ $plan->page1 }}{{ $plan->page2 }}{{ $plan->page3 }}{{ $plan->page4 }}~{{ $plan->page5 }}{{ $plan->page6 }}{{ $plan->page7 }}{{ $plan->page8 }})
             </p>
@@ -63,13 +63,13 @@
                 <div class="text-gray-700 text-sm mb-2">
                     時間
                 </div>
-                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="23" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="start-hour" id="number" type="number" min="0" max="23" placeholder="">
                 <div class="inline-block">:</div>
-                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="59" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="start-minute" id="number" type="number" min="0" max="59" placeholder="">
                 <div class="inline-block">~</div>
-                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="23" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="end-hour" id="number" type="number" min="0" max="23" placeholder="">
                 <div class="inline-block">:</div>
-                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="number" id="number" type="number" min="0" max="59" placeholder="">
+                <input class="inline-block text-center text-xs py-1 shadow appearance-none border rounded w-9 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="end-minute" id="number" type="number" min="0" max="59" placeholder="">
             </div>
             <div class="mb-4">
                 <div class="text-gray-700 text-sm mb-2">
