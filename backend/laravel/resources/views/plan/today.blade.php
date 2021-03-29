@@ -3,8 +3,11 @@
 @section('content')
 <link href="{{ asset('css/today.css') }}" rel="stylesheet">
 <script src="{{ asset('js/today.js') }}" defer></script>
+<style>
+
+</style>
 <div class="container my-24 py-2 border bg-blue-700 rounded-lg">
-    <div class="text-center my-6 text-white text-2xl">{{ $today->format('Y年m月d日') }}</div>
+    <div class="text-center my-6 text-white text-2xl">{{ $today->format('m月d日') }}</div>
     <div class="flex">
         <div class="w-2/12 text-white text-xs my-3">
             <p class="text-center mb-4">0:00</p>
@@ -34,7 +37,7 @@
         </div>
         <div class="text-center ml-6 my-4 w-10/12">
             @foreach($plans as $plan)
-            <p class="{{ $plan->subject->bgColor ?? '' }} mb-0 text-xs border-2 border-transparent py-1 px-2 font-bold text-white transition-all mr-2 rounded-sm">
+            <p class="{{ $plan->subject->bgColor ?? '' }} mb-0 text-xs border-2 border-transparent py-1 px-2 font-bold text-white transition-all mr-2 rounded-sm" style="margin-top: {{ $plan->startLineHour }}px; height: {{ $$plan->endLineHour }}px">
                 {{ $plan->content }}
                 ({{ $plan->page1 }}{{ $plan->page2 }}{{ $plan->page3 }}{{ $plan->page4 }}~{{ $plan->page5 }}{{ $plan->page6 }}{{ $plan->page7 }}{{ $plan->page8 }})
             </p>
@@ -47,7 +50,7 @@
 </div>
 <div id="mask" class="hidden"></div>
 <section id="modal" class="hidden" @if ($errors->count()) data-init="open" @endif>
-    <div class=" flex items-center justify-center">
+    <div class="flex items-center justify-center">
         <form id="form" class="px-8 pt-6 mb-4 w-11/12" action="{{ route('plan.today') }}" method="POST">
             @csrf
             <div class="mb-4">

@@ -22,6 +22,10 @@ class CreatePlansTable extends Migration
             $table->timestamp('ended_at')->nullable();
             $table->unsignedInteger('start_page')->nullable();
             $table->unsignedInteger('end_page')->nullable();
+            $table->integer('start_hour');
+            $table->integer('start_minute');
+            $table->integer('end_hour');
+            $table->integer('start_minute');
             $table->text('content');
             $table->integer('page1')->nullable();
             $table->integer('page2')->nullable();

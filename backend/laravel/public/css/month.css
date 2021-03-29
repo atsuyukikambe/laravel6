@@ -29,6 +29,10 @@
 
 /* ($startLineHour)=($start-hour)*40+(start-minute)*0.66666667 */
 
+.mb-0.text-xs.border-2.border-transparent.py-1.px-2.font-bold.text-white.transition-all.mr-2.rounded-sm {
+    margin-top: 40px;
+}
+
 #mask.hidden {
     display: none;
 }
